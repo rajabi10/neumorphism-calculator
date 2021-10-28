@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <link rel="stylesheet" href="style.css">
+
+</head>
+
+<body>
+    <script src="./index.js"></script>
+
+    <div class="main">
+        <div class="heading">
+            <span><i class="fa fa-bars"></i></span>
+            <span>calculator</span>
+            <span>
+                <label>
+                    <input type="checkbox" name="theme">
+                    <span class="btn"></span>
+            <i class="fa fa-moon"></i>M<i class="fa fa-moon"></i>
+            </label>
+            </span>
+        </div>
+        <div id="result">
+            <div class="history">
+                <p id="history-value"></p>
+            </div>
+            <div class="output">
+                <p id="output-value"></p>
+            </div>
+        </div>
+    </div>
+    <div id="keyboard">
+        <div class="group">
+            <div class="top-section">
+                <button class="operator" value="" onclick="clr()">C</button>
+                <button class="operator" value="backspace" onclick="operator(value)">B</button>
+                <button class="operator" value="%" onclick="operator(value)">%</button>
+            </div>
+            <div class="middle-section">
+                <div>
+                    <button class="number" value="7" onclick="operand(value)">7</button>
+                    <button class="number" value="8" onclick="operand(value)">8</button>
+                    <button class="number" value="9" onclick="operand(value)">9</button>
+                </div>
+                <div>
+                    <button class="number" value="4" onclick="operand(value)">4</button>
+                    <button class="number" value="5" onclick="operand(value)">5</button>
+                    <button class="number" value="6" onclick="operand(value)">6</button>
+                </div>
+                <div>
+                    <button class="number" value="1" onclick="operand(value)">1</button>
+                    <button class="number" value="2" onclick="operand(value)">2</button>
+                    <button class="number" value="3" onclick="operand(value)">3</button>
+                </div>
+                <div>
+                    <button class="number" value="00" onclick="operand(value)">00</button></td>
+                    <button class="number" value="0" onclick="operand(value)">0</button></td>
+                </div>
+            </div>
+            <div class="side-section">
+                <button class="operator" value="/" onclick="operator(value)">/</button>
+                <button class="operator" value="*" onclick="operator(value)">*</button>
+                <button class="operator" value="-" onclick="operator(value)">-</button>
+                <button class="operator" value="+" onclick="operator(value)">+</button>
+                <button class="operator equal" onclick="equal()">=</button></td>
+            </div>
+        </div>
+    </div>
+</body>
+
+</html>
